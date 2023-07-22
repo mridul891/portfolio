@@ -1,0 +1,46 @@
+.Tech__skill{
+    justify-content: space-between;
+    grid-template-columns:25rem 25rem;
+    row-gap: 5rem;
+}
+.skill__heading{
+    color: #023246;
+}
+.arrow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.btn1{
+    padding: 0.25rem 0.5rem;
+    line-height: 1;
+    border-radius: 1.875rem;
+    box-shadow: 0 0 1px rgb(0 0 0/0%);
+    border: 1px solid transparent;
+    color: #fff;
+    display: inline-block;
+    background-color: var(--first-color);
+    font-weight: var(--font-bold);
+  }
+  .btn1:hover{
+    animation: button-push 0.5s linear 1;
+  }
+  .section__details{
+    margin-bottom: 3rem;
+  }
+  .section__details h1{
+    margin: 0;
+    padding: 0;
+  }
+  .skills__info{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    margin-top: 10px;
+  }
+  .underline {
+    height: 5px;
+    background-color:#287094;
+    border: transparent;
+    border-radius: 10px;
+  }

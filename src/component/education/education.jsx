@@ -7,7 +7,6 @@ function education() {
     <section className="education container section" id="#education">
       <div className="section__details">
         <h1 className="section__title">Qualification</h1>
-        <h4>My Educational Qualification & Work Experience</h4>
       </div>
       <div className="resume__container grid">
         <div className="timeline grid">

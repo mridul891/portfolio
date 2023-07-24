@@ -1,42 +1,39 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./skills.css";
-import Data from "./data";
-import Card from "./card";
-function skills() {
+import { urlFor, client } from "../../client";
+import {motion} from 'framer-motion'
+const Skills = () => {
+  const [skills, setSkills] = useState([]);
+  useEffect(() => {
+    const skillsquery = '*[_type == "skills"]';
+    client.fetch(skillsquery).then((data) => {
+      setSkills(data);
+    })
+  }, []);
+
   return (
-    <section className="skills               container section" id="#education">
-      <div className="section__details">
-        <h1 className="section__title">Skiils</h1>
-        <h4>My Technical Skills</h4>
-      </div>
-      <div className="resume__container grid">
-        <div className="timeline grid">
-          {Data.map((Data, id) => {
-            if (Data.category === "Languages") {
-              return (
-                <Card key={id} title={Data.title}
-               />
-              );
-            }
-          })}
-        </div>
-        <div className="timeline grid">
-          {Data.map((val, index) => {
-            if (val.category === "Libraries and Framework") {
-              return <Card key={index} title={val.title} />;
-            }
-          })}
-        </div>
-        <div className="timeline grid">
-          {Data.map((val, indent) => {
-            if (val.category === "Tools") {
-              return <Card key={indent} title={val.title} />;
-            }
-          })}
-        </div>
-      </div>
+    <section className="containers section">
+    <h2 className=" container skill section__title">Skills </h2>
+    <div className="app__skills-container container">
+      <motion.div className="app__skills-list">
+      {skills.map((skill)=>( 
+          <motion.div
+          whileInView={{opacity:[0,1]}}
+          transition={{duration:0.5}}
+          className="app__skills-item app__flex"
+          key={skill.name}>
+
+            <div className="app__flex" style={{backgroundColor:skill.bgcolor}}>
+              <img src={urlFor(skill.icon)} alt="{skill.name}"/>
+            </div>
+            <p className="p-text">{skill.name}</p>
+            </motion.div>
+        ))}
+      </motion.div>
+
+    </div>
     </section>
   );
-}
+};
 
-export default skills;
+export default Skills;

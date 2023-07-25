@@ -23,6 +23,9 @@ const Projects = () => {
               className=" app__flex"
               key={project.name}
             >
+              <div>
+                
+              </div>
               <div className="app__flex">
                 <div className="image_detail">
                   <img src={urlFor(project.icon)} alt="{project.name} " />

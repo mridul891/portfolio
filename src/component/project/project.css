@@ -1,0 +1,58 @@
+.project__view {
+  background-color: rgba(239, 239, 239, 0.883);
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px rgb(170, 169, 169);
+}
+.image_detail {
+  margin: 3.5rem 0rem;
+  max-height: 20rem;
+  overflow: hidden;
+  box-shadow: 5px 5px 5px rgb(170, 169, 169);
+  border-radius: 10px;
+}
+.image_detail img {
+  border-radius: 10px;
+  transition: transform 8s;
+  will-change: transform;
+}
+.image_detail img:hover {
+  transform: translateY(-1000px);
+}
+.projects__details{
+    display: flex;
+    flex-direction: column;
+}
+.text {
+  margin-left: 1rem;
+}
+.p-text {
+    text-align: center;
+  margin-bottom: 1rem;
+  font-size: var(--h2-font-size);
+}
+.getcode {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.Links{
+ text-decoration: none;
+}
+.skills{
+    display: flex;
+    justify-content: center;
+
+}
+.btn1{
+    margin: 0.5rem;
+    background-color: white;
+    display: inline-block;
+    padding: 10px;
+    border-radius:10px;
+}
+.para{
+    text-align: center;
+    font-size: large;
+    color: grey;
+}

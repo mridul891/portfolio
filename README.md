@@ -1,3 +1,5 @@
+# This Project is in working stage and the responsive feature is yet to come .Kindly view this project in the desktop version in your Smartphones.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

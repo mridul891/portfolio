@@ -25,6 +25,7 @@ function Home() {
             </div>
             <div className="socials">
               <h3>Follow Us:</h3>
+              <Social/>
             </div>
           </div>
           <div className="image">

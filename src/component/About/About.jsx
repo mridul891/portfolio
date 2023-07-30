@@ -3,20 +3,7 @@ import "./About.css";
 import Image from "../../asset/avatar-2.svg";
 import resume from "../../asset/MridulResume.docx"
 function about() {
-  const skills = [
-    {
-      names: "Web Development",
-      percentage: 90,
-    },
-    {
-      names: "UI/UX",
-      percentage: 80,
-    },
-    {
-      names: "Web Design",
-      percentage: 80,
-    },
-  ];
+
   return (
     <section className="about container section" id="#about">
       <h2 className="section__title">About Me</h2>

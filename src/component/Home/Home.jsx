@@ -1,30 +1,40 @@
 import React from "react";
 import "./Home.css";
-import Me from "../../asset/avatar-1.svg";
-import Headersocial from "./headersocial";
 import Scrolldown from "./Scrolldown";
+import Social from "./Social";
 import Shapes from "./shapes";
+import hand from "../../asset/wavinghand.png"
+import Lottie from "lottie-react";
+import a2 from "../../asset/a2.json";
 function Home() {
   return (
-    <div>
-      <section className="home container" id="#home">
+    <>
+      <section className="home" id="#home">
         <div className="intro">
-          <img src={Me} alt="" className="home__img" />
-          <h1 className="home__name">Mridul Pandey</h1>
-          <span className="home__education">I'm a Front-End Developer</span>
+          <div className="details">
+            <div className="name">
+              <h1 className="heading">
+                Front-End React <br></br>Developer<img src={hand} alt="hand"></img>
+              </h1>
+            </div>
+            <div className="about_me">
+              <p>
+                Hi, I'm Mridul Pandey. A passionate Front-end React Developer
+                based in Delhi, India. 📍
+              </p>
+            </div>
+            <div className="socials">
+              <h3>Follow Us:</h3>
+            </div>
+          </div>
+          <div className="image">
+            <Lottie animationData={a2} />
+          </div>
+        </div>
 
-          <Headersocial />
-
-          <a href="https://www.instagram.com/" className="btn">
-            Hire Me <i className="fa-regular fa-file-lines"></i>
-          </a>
-
-          <Scrolldown />
-
-          <Shapes />
-        </div>  
+        <Shapes />
       </section>
-    </div>
+    </>
   );
 }
 

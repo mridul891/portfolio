@@ -1,14 +1,18 @@
 .home {
   position: relative;
-  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 100vh;
 }
 
 .intro {
-  max-width: 540px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70vw;
+  margin:0 5rem 0rem 17rem;
 }
 
 .home__img {
@@ -138,4 +142,17 @@
 .s11 {
   bottom: 10%;
   right: 2%;
+}
+.heading{
+  font-size: 3rem;
+}
+.heading img {
+  height: 70px;
+  width: 70px;
+}
+.details{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
